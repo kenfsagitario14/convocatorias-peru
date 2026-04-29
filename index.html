@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>ConvocatoriasPerúHoy | CAS · 728 · Prácticas – Sector Público</title>
+<meta name="description" content="El portal más completo de convocatorias del sector público peruano. CAS, 728, prácticas. Actualizado automáticamente cada día."/>
+<meta name="keywords" content="convocatorias peru 2026, CAS peru, trabajo estado peruano, empleo publico peru, MINSA convocatorias, SUNAT practicantes"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:15px}
+body{font-family:'DM Sans',sans-serif;background:#f6f8fc;color:#0f1c35;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none}
+input,select,textarea{font-family:inherit}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:#c8d4e8;border-radius:4px}
+:root{
+  --navy:#0a1f44;--navy2:#1a3560;--blue:#1d4ed8;--blue2:#2563eb;
+  --blue-lt:#dbeafe;--blue-xlt:#eff6ff;--red:#dc2626;--red-lt:#fee2e2;
+  --gold:#f59e0b;--gold-lt:#fef3c7;--green:#16a34a;--green-lt:#dcfce7;
+  --bg:#f6f8fc;--card:#ffffff;--border:#e2e8f0;--border2:#cbd5e1;
+  --text:#0f1c35;--text2:#475569;--text3:#94a3b8;
+  --radius:12px;--radius-sm:8px;
+  --shadow:0 1px 8px rgba(15,28,53,.07);
+  --shadow-md:0 4px 20px rgba(15,28,53,.12);
+  --shadow-lg:0 12px 48px rgba(15,28,53,.18);
+}
+
+/* NAV */
+.nav{background:var(--navy);position:sticky;top:0;z-index:1000;border-bottom:2px solid rgba(245,158,11,.4)}
+.nav-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;gap:16px;padding:0 24px;height:62px}
+.logo{display:flex;align-items:center;gap:10px;cursor:pointer;flex-shrink:0}
+.logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--gold),#e07b00);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.logo-name{font-family:'Sora',sans-serif;font-size:17px;font-weight:800;color:#fff;letter-spacing:-.3px}
+.logo-name span{color:var(--gold)}
+.logo-badge{font-size:9px;color:rgba(255,255,255,.5);letter-spacing:1.2px;text-transform:uppercase;margin-top:1px}
+.nav-search-bar{flex:1;max-width:500px;display:flex;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.15);border-radius:var(--radius-sm);overflow:hidden;transition:all .2s}
+.nav-search-bar:focus-within{background:rgba(255,255,255,.18);border-color:var(--gold)}
+.nav-search-bar input{flex:1;background:transparent;border:none;outline:none;padding:9px 14px;font-size:13.5px;color:#fff}
+.nav-search-bar input::placeholder{color:rgba(255,255,255,.45)}
+.nav-search-bar button{background:var(--gold);color:#fff;padding:9px 18px;font-size:13px;font-weight:700;transition:background .2s}
+.nav-search-bar button:hover{background:#d97706}
+.nav-links{display:flex;gap:4px}
+.nbtn{background:rgba(255,255,255,.08);color:rgba(255,255,255,.85);padding:7px 14px;border-radius:var(--radius-sm);font-size:13px;font-weight:500;transition:all .2s;border:1px solid transparent}
+.nbtn:hover,.nbtn.on{background:rgba(255,255,255,.18);color:#fff;border-color:rgba(255,255,255,.2)}
+.nbtn.gold{background:var(--gold);color:#1a1a1a;font-weight:700}
+.nbtn.gold:hover{background:#d97706;color:#fff}
+
+/* TICKER */
+.ticker{background:var(--blue);padding:6px 0;overflow:hidden}
+.ticker-track{display:flex;gap:56px;animation:scroll-l 35s linear infinite;width:max-content}
+.ticker-track:hover{animation-play-state:paused}
+@keyframes scroll-l{to{transform:translateX(-50%)}}
+.tick{font-size:12px;color:rgba(255,255,255,.9);font-weight:500;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.tick-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+/* HERO */
+.hero{background:linear-gradient(150deg,var(--navy) 0%,var(--navy2) 50%,#1e4080 100%);padding:52px 24px 44px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(245,158,11,.5),transparent)}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative}
+.hero-top{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;margin-bottom:32px}
+.hero-flag{display:inline-flex;align-items:center;gap:7px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);border-radius:20px;padding:5px 14px;margin-bottom:14px}
+.hero-flag span{font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-family:'Sora',sans-serif;font-size:clamp(28px,4vw,46px);font-weight:800;color:#fff;line-height:1.18;margin-bottom:10px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{font-size:15px;color:rgba(255,255,255,.65);max-width:520px}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap}
+.hstat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:14px 22px;text-align:center;min-width:110px;transition:background .2s}
+.hstat:hover{background:rgba(255,255,255,.13)}
+.hstat-n{font-family:'Sora',sans-serif;font-size:28px;font-weight:800;color:#fff;line-height:1}
+.hstat-l{font-size:10px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.8px;margin-top:3px}
+
+/* SEARCH BOX */
+.search-box{background:#fff;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;gap:14px;min-width:300px;max-width:340px}
+.search-box h3{font-family:'Sora',sans-serif;font-size:14px;font-weight:700;color:var(--navy)}
+.sb-field{display:flex;flex-direction:column;gap:5px}
+.sb-field label{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px}
+.sb-field select{padding:9px 12px;border:1.5px solid var(--border2);border-radius:var(--radius-sm);font-size:13px;color:var(--text);background:#fff;outline:none}
+.sb-field select:focus{border-color:var(--blue2)}
+.btn-search-hero{background:var(--blue);color:#fff;padding:11px;border-radius:var(--radius-sm);font-size:14px;font-weight:700;width:100%;transition:background .2s}
+.btn-search-hero:hover{background:var(--blue2)}
+
+/* AUTO STATUS */
+.auto-status{background:rgba(22,163,74,.12);border:1px solid rgba(22,163,74,.3);border-radius:var(--radius-sm);padding:8px 14px;display:inline-flex;align-items:center;gap:8px;margin-top:14px}
+.auto-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 6px #4ade80;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+.auto-txt{font-size:12px;color:#4ade80;font-weight:600}
+
+/* CATEGORY STRIP */
+.cat-strip{background:#fff;border-bottom:1px solid var(--border);padding:0 24px}
+.cat-inner{max-width:1240px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;padding:10px 0;scrollbar-width:none}
+.cat-inner::-webkit-scrollbar{display:none}
+.cat-btn{flex-shrink:0;display:flex;align-items:center;gap:7px;padding:8px 16px;border-radius:20px;font-size:13px;font-weight:600;color:var(--text2);background:transparent;border:1.5px solid var(--border);transition:all .18s;white-space:nowrap}
+.cat-btn:hover{background:var(--blue-lt);color:var(--blue);border-color:var(--blue2)}
+.cat-btn.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* LAYOUT */
+.wrap{max-width:1240px;margin:0 auto;padding:28px 24px}
+.two-col{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:start}
+
+/* SIDEBAR */
+.sidebar{background:var(--card);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);position:sticky;top:74px;overflow:hidden}
+.sb-head{background:var(--navy);color:#fff;padding:14px 18px;font-family:'Sora',sans-serif;font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase}
+.sb-body{padding:18px}
+.fg{margin-bottom:17px}
+.fg-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--blue);margin-bottom:8px}
+.fg-select{width:100%;padding:8px 11px;border:1.5px solid var(--border2);border-radius:var(--radius-sm);font-size:13px;color:var(--text);background:#fff;outline:none;transition:border-color .2s}
+.fg-select:focus{border-color:var(--blue2)}
+.pill-row{display:flex;flex-wrap:wrap;gap:6px}
+.pill{background:#f1f5f9;color:var(--text2);border:1.5px solid var(--border);padding:4px 11px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;transition:all .18s}
+.pill:hover{background:var(--blue-lt);color:var(--blue);border-color:#93c5fd}
+.pill.on{background:var(--blue);color:#fff;border-color:var(--blue)}
+.sb-divider{height:1px;background:var(--border);margin:15px 0}
+.stat-box{background:var(--blue-xlt);border:1px solid #bfdbfe;border-radius:var(--radius-sm);padding:14px;text-align:center}
+.stat-box-n{font-family:'Sora',sans-serif;font-size:32px;font-weight:800;color:var(--blue);line-height:1}
+.stat-box-l{font-size:11px;color:#3b82f6;text-transform:uppercase;letter-spacing:.7px;margin-top:2px}
+.ad-side{background:var(--gold-lt);border:2px dashed var(--gold);border-radius:var(--radius-sm);padding:16px;text-align:center}
+.ad-side p{font-size:10px;color:#92400e;text-transform:uppercase;letter-spacing:.8px;margin-bottom:4px}
+.ad-side strong{font-size:12px;color:#78350f;display:block;margin-bottom:8px;line-height:1.4}
+
+/* MAIN TOOLBAR */
+.toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px}
+.res-info{font-size:14px;color:var(--text2)}
+.res-info strong{color:var(--blue);font-weight:700}
+.sort-sel{padding:7px 11px;border:1.5px solid var(--border2);border-radius:var(--radius-sm);font-size:13px;background:#fff;outline:none;cursor:pointer}
+.upd-info{font-size:11px;color:var(--text3);display:flex;align-items:center;gap:5px}
+.upd-dot{width:6px;height:6px;border-radius:50%;background:var(--green)}
+
+/* CARDS */
+.cards{display:flex;flex-direction:column;gap:12px}
+.jcard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);display:flex;cursor:pointer;transition:box-shadow .2s,transform .18s,border-color .2s;overflow:hidden}
+.jcard:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:#93c5fd}
+.jcard-accent{width:4px;flex-shrink:0}
+.accent-cas{background:var(--blue)}
+.accent-728{background:var(--gold)}
+.accent-prac{background:var(--red)}
+.jcard-logo{width:80px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:32px;background:var(--blue-xlt);border-right:1px solid var(--border);overflow:hidden}
+.jcard-logo img{width:100%;height:100%;object-fit:cover}
+.jcard-body{flex:1;padding:14px 16px;display:flex;gap:14px;align-items:flex-start;min-width:0}
+.jcard-info{flex:1;min-width:0}
+.jcard-modal{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;padding:3px 9px;border-radius:20px;margin-bottom:6px}
+.m-cas{background:var(--blue-lt);color:var(--blue)}
+.m-728{background:var(--gold-lt);color:#92400e}
+.m-prac{background:var(--red-lt);color:var(--red)}
+.jcard-title{font-family:'Sora',sans-serif;font-size:15px;font-weight:700;color:var(--text);margin-bottom:3px;line-height:1.35}
+.jcard-entidad{font-size:12.5px;color:var(--blue2);font-weight:600;margin-bottom:9px}
+.jcard-tags{display:flex;flex-wrap:wrap;gap:6px}
+.jtag{font-size:11px;padding:3px 9px;border-radius:10px;font-weight:500;display:flex;align-items:center;gap:4px}
+.jtag-loc{background:#f1f5f9;color:#475569;border:1px solid var(--border)}
+.jtag-sal{background:var(--green-lt);color:var(--green)}
+.jtag-date{background:var(--gold-lt);color:#92400e}
+.jcard-right{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex-shrink:0}
+.btn-det{background:var(--blue);color:#fff;padding:8px 16px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;white-space:nowrap;transition:background .2s}
+.btn-det:hover{background:var(--blue2)}
+.jcard-vac{font-size:11px;color:var(--text3);text-align:right}
+.days{font-size:10.5px;font-weight:700;padding:3px 9px;border-radius:20px}
+.days-ok{background:var(--green-lt);color:var(--green)}
+.days-mid{background:var(--gold-lt);color:#92400e}
+.days-hot{background:var(--red-lt);color:var(--red);animation:blink2 1.8s infinite}
+@keyframes blink2{0%,100%{opacity:1}50%{opacity:.5}}
+.nbadge{background:var(--gold);color:#1a1a1a;font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:2px 7px;border-radius:10px;margin-left:4px}
+.auto-badge{background:var(--green-lt);color:var(--green);border:1px solid #86efac;font-size:9px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:4px}
+.empty{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:56px 24px;text-align:center}
+.empty-i{font-size:48px;margin-bottom:12px}
+.empty-t{font-size:15px;color:var(--text2)}
+
+/* LOADING */
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px;gap:14px}
+.spinner{width:40px;height:40px;border:3px solid var(--blue-lt);border-top-color:var(--blue);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-t{font-size:14px;color:var(--text2)}
+
+/* MODAL */
+.backdrop{position:fixed;inset:0;background:rgba(10,31,68,.6);z-index:9000;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
+.mbox{background:#fff;border-radius:16px;width:100%;max-width:620px;max-height:92vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-lg);animation:pop .22s cubic-bezier(.34,1.56,.64,1)}
+@keyframes pop{from{opacity:0;transform:scale(.93) translateY(14px)}to{opacity:1;transform:none}}
+.mhead{background:var(--navy);color:#fff;padding:20px 24px;flex-shrink:0;border-bottom:3px solid var(--gold);display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.mhead h2{font-family:'Sora',sans-serif;font-size:18px;font-weight:800;line-height:1.3;margin-bottom:4px}
+.mhead-ent{font-size:13px;color:rgba(255,255,255,.65)}
+.mclose{background:rgba(255,255,255,.12);color:#fff;width:30px;height:30px;border-radius:50%;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .2s}
+.mclose:hover{background:rgba(255,255,255,.25)}
+.mbody{overflow-y:auto;padding:22px 24px;flex:1}
+.m-banner{background:var(--blue-xlt);border-radius:var(--radius-sm);height:96px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;font-size:52px;border:2px dashed #bfdbfe;overflow:hidden}
+.m-banner img{width:100%;height:100%;object-fit:cover}
+.igrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:20px}
+.itile{background:var(--bg);border-radius:var(--radius-sm);padding:10px 12px;border:1px solid var(--border)}
+.itile-l{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+.itile-v{font-size:14px;font-weight:700;color:var(--text)}
+.msect{margin-bottom:18px}
+.msect-t{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--blue);margin-bottom:8px;border-bottom:2px solid var(--blue-lt);padding-bottom:5px}
+.req-ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+.req-ul li{font-size:13px;color:#334155;display:flex;gap:8px;background:var(--blue-xlt);border-radius:var(--radius-sm);padding:6px 10px}
+.req-ul li::before{content:"✓";color:var(--blue);font-weight:800;flex-shrink:0}
+.mfoot{padding:14px 24px;border-top:1px solid var(--border);display:flex;gap:10px;justify-content:flex-end;flex-shrink:0;background:#fafbfd}
+.btn-close-m{background:#fff;color:var(--text2);border:1.5px solid var(--border2);padding:10px 18px;border-radius:var(--radius-sm);font-size:13px}
+.btn-close-m:hover{background:#f1f5f9}
+.btn-post{background:var(--blue);color:#fff;padding:10px 26px;border-radius:var(--radius-sm);font-size:14px;font-weight:700;transition:background .2s}
+.btn-post:hover{background:var(--blue2)}
+.btn-save{background:var(--gold-lt);color:#92400e;border:1.5px solid var(--gold);padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:600}
+
+/* LOGIN */
+.login-back{position:fixed;inset:0;background:rgba(10,31,68,.7);z-index:9500;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(5px)}
+.lbox{background:#fff;border-radius:16px;width:100%;max-width:360px;overflow:hidden;box-shadow:var(--shadow-lg);animation:pop .22s cubic-bezier(.34,1.56,.64,1)}
+.lhead{background:var(--navy);color:#fff;padding:26px 24px;text-align:center;border-bottom:3px solid var(--gold)}
+.lhead h2{font-family:'Sora',sans-serif;font-size:20px;font-weight:800;margin-bottom:4px}
+.lhead p{font-size:13px;color:rgba(255,255,255,.6)}
+.lbody{padding:24px}
+.lfield{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.lfield label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--text2)}
+.lfield input{padding:10px 14px;border:1.5px solid var(--border2);border-radius:var(--radius-sm);font-size:14px;outline:none;transition:border-color .2s}
+.lfield input:focus{border-color:var(--blue2)}
+.lerr{background:var(--red-lt);color:var(--red);border:1px solid #fca5a5;border-radius:var(--radius-sm);padding:10px 14px;font-size:13px;font-weight:600;margin-bottom:14px;display:none}
+.btn-login{background:var(--blue);color:#fff;width:100%;padding:12px;border-radius:var(--radius-sm);font-size:15px;font-weight:700;transition:background .2s}
+.btn-login:hover{background:var(--blue2)}
+.btn-cancel-l{background:none;color:var(--text3);font-size:13px;width:100%;padding:8px;margin-top:8px}
+
+/* ADMIN */
+.admin-wrap{max-width:1240px;margin:0 auto;padding:28px 24px}
+.adm-head{background:var(--navy);color:#fff;border-radius:var(--radius);padding:20px 24px;margin-bottom:24px;display:flex;align-items:center;gap:14px;border-bottom:3px solid var(--gold)}
+.adm-head h2{font-family:'Sora',sans-serif;font-size:22px;font-weight:800}
+.adm-head p{font-size:13px;color:rgba(255,255,255,.6);margin-top:2px}
+.adm-logout{margin-left:auto;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2);padding:7px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:600}
+.info-github{background:linear-gradient(135deg,#0f2d5c,#1a4080);border-radius:var(--radius);padding:22px 24px;margin-bottom:22px;border:1px solid #2563eb;color:#fff}
+.info-github h3{font-family:'Sora',sans-serif;font-size:16px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.info-github p{font-size:13px;color:rgba(255,255,255,.75);line-height:1.7}
+.info-github code{background:rgba(255,255,255,.15);padding:2px 8px;border-radius:4px;font-size:12px;font-family:monospace}
+.src-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:16px 0}
+.src-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius-sm);padding:12px 14px;display:flex;align-items:center;gap:10px}
+.src-icon{font-size:20px;flex-shrink:0}
+.src-name{font-size:13px;font-weight:700;color:#fff}
+.src-sub{font-size:10px;color:rgba(255,255,255,.5)}
+.s-dot{width:8px;height:8px;border-radius:50%;margin-left:auto;flex-shrink:0}
+.s-on{background:#4ade80;box-shadow:0 0 5px #4ade80}
+.s-off{background:#64748b}
+.form-card{background:#fff;border-radius:var(--radius);border:1px solid var(--border);padding:22px;box-shadow:var(--shadow);margin-bottom:22px}
+.form-card-t{font-family:'Sora',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--blue-lt)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.ff{display:flex;flex-direction:column;gap:5px}
+.ff.full{grid-column:1/-1}
+.ff label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text2)}
+.ff input,.ff select,.ff textarea{padding:9px 12px;border:1.5px solid var(--border2);border-radius:var(--radius-sm);font-size:13px;color:var(--text);background:#fff;outline:none;transition:border-color .2s}
+.ff input:focus,.ff select:focus,.ff textarea:focus{border-color:var(--blue2)}
+.ff textarea{resize:vertical;min-height:76px}
+.btn-pub{background:var(--blue);color:#fff;padding:11px 26px;border-radius:var(--radius-sm);font-size:14px;font-weight:700;margin-top:16px;transition:background .2s}
+.btn-pub:hover{background:var(--blue2)}
+.ok-banner{background:var(--green-lt);color:var(--green);border:1.5px solid #86efac;border-radius:var(--radius-sm);padding:12px 16px;font-weight:700;font-size:14px;margin-bottom:16px;display:none}
+.adm-table{background:#fff;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+.adm-thead{background:#f8fafc;padding:13px 20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--blue);display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
+.adm-row{display:flex;align-items:center;gap:13px;padding:12px 20px;border-bottom:1px solid var(--border);transition:background .15s}
+.adm-row:last-child{border-bottom:none}
+.adm-row:hover{background:var(--blue-xlt)}
+.adm-row-t{font-size:13px;font-weight:700;color:var(--text)}
+.adm-row-s{font-size:11px;color:var(--text3);margin-top:1px}
+.btn-del{background:var(--red-lt);color:var(--red);border:1px solid #fca5a5;padding:5px 12px;border-radius:var(--radius-sm);font-size:11px;font-weight:700;transition:all .2s}
+.btn-del:hover{background:var(--red);color:#fff}
+
+/* INICIO */
+.inicio-wrap{max-width:1240px;margin:0 auto;padding:28px 24px}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.sec-title{font-family:'Sora',sans-serif;font-size:22px;font-weight:800;color:var(--navy)}
+.btn-all{background:var(--blue);color:#fff;padding:8px 18px;border-radius:var(--radius-sm);font-size:13px;font-weight:700;transition:background .2s}
+.btn-all:hover{background:var(--blue2)}
+.mod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:32px}
+.mod-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:22px 18px;cursor:pointer;transition:box-shadow .2s,transform .18s,border-color .2s;box-shadow:var(--shadow)}
+.mod-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px);border-color:#93c5fd}
+.mod-i{font-size:36px;margin-bottom:10px}
+.mod-t{font-family:'Sora',sans-serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.mod-d{font-size:12px;color:var(--text3)}
+.ad-full{background:var(--gold-lt);border:2px dashed var(--gold);border-radius:var(--radius);padding:18px 24px;text-align:center;margin:20px 0}
+.ad-full p{font-size:10px;color:#92400e;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.ad-full strong{font-size:15px;color:#78350f}
+
+/* FOOTER */
+.footer{background:var(--navy);color:rgba(255,255,255,.65);padding:40px 24px 28px;margin-top:48px}
+.footer-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:28px}
+.f-logo{font-family:'Sora',sans-serif;font-size:18px;font-weight:800;color:#fff;margin-bottom:10px}
+.f-logo span{color:var(--gold)}
+.f-desc{font-size:12.5px;line-height:1.7;max-width:260px}
+.f-col h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#fff;margin-bottom:12px}
+.f-col ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.f-col ul a{font-size:13px;color:rgba(255,255,255,.55);transition:color .2s}
+.f-col ul a:hover{color:#fff}
+.f-bottom{max-width:1240px;margin:0 auto;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;font-size:11.5px;color:rgba(255,255,255,.35);flex-wrap:wrap;gap:8px}
+
+@media(max-width:900px){
+  .two-col{grid-template-columns:1fr}.sidebar{position:static}
+  .hero-top{grid-template-columns:1fr}.search-box{display:none}
+  .footer-inner{grid-template-columns:1fr 1fr}.igrid{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .nav-inner{flex-wrap:wrap;height:auto;padding:10px 16px;gap:8px}
+  .nav-search-bar{order:3;flex-basis:100%;max-width:100%}
+  .hero h1{font-size:26px}.footer-inner{grid-template-columns:1fr}
+  .jcard-logo{display:none}.src-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ IMPORTANTE: cambia esta URL por la de tu repositorio GitHub ══ -->
+<!-- Formato: https://TU_USUARIO.github.io/convocatorias-peru/convocatorias.json -->
+<script>
+  const JSON_URL = 'convocatorias.json'; // ← cuando uses GitHub Pages pon la URL completa
+</script>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="logo" onclick="goHome()">
+      <div class="logo-icon">🇵🇪</div>
+      <div>
+        <div class="logo-name">Convocatorias<span>Perú</span></div>
+        <div class="logo-badge">Sector Público · Auto-actualizado diariamente</div>
+      </div>
+    </div>
+    <div class="nav-search-bar">
+      <input type="text" id="srch" placeholder="Buscar cargo, entidad, región..." oninput="filtrar()"/>
+      <button onclick="filtrar()">Buscar</button>
+    </div>
+    <nav class="nav-links">
+      <button class="nbtn on" id="nav-inicio" onclick="showView('inicio')">Inicio</button>
+      <button class="nbtn" id="nav-convocatorias" onclick="showView('convocatorias')">Convocatorias</button>
+      <button class="nbtn gold" id="nav-admin" onclick="abrirAdmin()">⚙ Admin</button>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker"><div class="ticker-track" id="ticker"></div></div>
+
+<!-- INICIO -->
+<div id="view-inicio">
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-top">
+        <div>
+          <div class="hero-flag"><span>🏛️ Sector Público Peruano 2026</span></div>
+          <h1>Encuentra tu empleo<br/>en el <em>Estado Peruano</em></h1>
+          <p class="hero-sub">CAS · Régimen 728 · Prácticas — importadas automáticamente de portales oficiales cada día</p>
+          <div class="hero-stats" style="margin-top:22px">
+            <div class="hstat"><div class="hstat-n" id="cnt-t">—</div><div class="hstat-l">Activas</div></div>
+            <div class="hstat"><div class="hstat-n" id="cnt-e">—</div><div class="hstat-l">Entidades</div></div>
+            <div class="hstat"><div class="hstat-n" id="cnt-r">—</div><div class="hstat-l">Regiones</div></div>
+            <div class="hstat"><div class="hstat-n" id="cnt-n">—</div><div class="hstat-l">Nuevas</div></div>
+          </div>
+          <div class="auto-status">
+            <div class="auto-dot"></div>
+            <span class="auto-txt" id="auto-txt">Cargando datos...</span>
+          </div>
+        </div>
+        <div class="search-box">
+          <h3>🔍 Búsqueda rápida</h3>
+          <div class="sb-field"><label>Modalidad</label>
+            <select id="qk-mod">
+              <option value="">Todas las modalidades</option>
+              <option>CAS</option><option>728</option><option>Prácticas</option>
+            </select>
+          </div>
+          <div class="sb-field"><label>Región</label>
+            <select id="qk-reg">
+              <option value="">Todas las regiones</option>
+              <option>Lima</option><option>Cusco</option><option>Arequipa</option>
+              <option>La Libertad</option><option>Piura</option><option>San Martín</option>
+              <option>Junín</option><option>Puno</option><option>Loreto</option>
+            </select>
+          </div>
+          <button class="btn-search-hero" onclick="quickSearch()">🔍 Ver convocatorias</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cat-strip">
+    <div class="cat-inner">
+      <button class="cat-btn on" onclick="catFilter(this,'')">🗂 Todas</button>
+      <button class="cat-btn" onclick="catFilter(this,'CAS')">🏛️ CAS</button>
+      <button class="cat-btn" onclick="catFilter(this,'728')">📄 Régimen 728</button>
+      <button class="cat-btn" onclick="catFilter(this,'Prácticas')">🎓 Prácticas</button>
+      <button class="cat-btn" onclick="catCarrera(this,'Salud')">🏥 Salud</button>
+      <button class="cat-btn" onclick="catCarrera(this,'Ingeniería')">⚙️ Ingeniería</button>
+      <button class="cat-btn" onclick="catCarrera(this,'Derecho')">⚖️ Derecho</button>
+      <button class="cat-btn" onclick="catCarrera(this,'Educación')">📚 Educación</button>
+      <button class="cat-btn" onclick="catCarrera(this,'Administración')">📊 Administración</button>
+      <button class="cat-btn" onclick="catCarrera(this,'Sistemas')">💻 Sistemas</button>
+    </div>
+  </div>
+
+  <div class="inicio-wrap">
+    <div class="ad-full"><p>Espacio publicitario — Google AdSense</p><strong>¿Quieres llegar a miles de postulantes del sector público? Anúnciate aquí</strong></div>
+    <div class="sec-head">
+      <div class="sec-title">Últimas convocatorias</div>
+      <button class="btn-all" onclick="showView('convocatorias')">Ver todas →</button>
+    </div>
+    <div id="inicio-cards" style="margin-bottom:32px">
+      <div class="loading"><div class="spinner"></div><div class="loading-t">Cargando convocatorias...</div></div>
+    </div>
+    <div class="sec-title" style="margin-bottom:14px">Buscar por modalidad</div>
+    <div class="mod-grid">
+      <div class="mod-card" onclick="filterAndGo('CAS')">
+        <div class="mod-i">🏛️</div><div class="mod-t">Contrato CAS</div>
+        <div class="mod-d">Contratación Administrativa de Servicios — la más común del Estado peruano</div>
+      </div>
+      <div class="mod-card" onclick="filterAndGo('728')">
+        <div class="mod-i">📄</div><div class="mod-t">Régimen 728</div>
+        <div class="mod-d">Con todos los beneficios sociales de ley</div>
+      </div>
+      <div class="mod-card" onclick="filterAndGo('Prácticas')">
+        <div class="mod-i">🎓</div><div class="mod-t">Prácticas preprofesionales</div>
+        <div class="mod-d">Para estudiantes universitarios e institutos</div>
+      </div>
+    </div>
+    <div class="ad-full"><p>Espacio publicitario — 728×90</p><strong>Conecta Google AdSense aquí para monetizar</strong></div>
+  </div>
+</div>
+
+<!-- CONVOCATORIAS -->
+<div id="view-convocatorias" style="display:none">
+  <div class="wrap">
+    <div class="two-col">
+      <aside class="sidebar">
+        <div class="sb-head">🔍 Filtrar resultados</div>
+        <div class="sb-body">
+          <div class="fg"><div class="fg-label">Modalidad</div>
+            <div class="pill-row">
+              <span class="pill on" onclick="togglePill(this,'modalidad','Todos')">Todas</span>
+              <span class="pill" onclick="togglePill(this,'modalidad','CAS')">CAS</span>
+              <span class="pill" onclick="togglePill(this,'modalidad','728')">728</span>
+              <span class="pill" onclick="togglePill(this,'modalidad','Prácticas')">Prácticas</span>
+            </div>
+          </div>
+          <div class="fg"><div class="fg-label">Región</div>
+            <select class="fg-select" id="f-region" onchange="filtrar()">
+              <option value="">Todas las regiones</option>
+              <option>Amazonas</option><option>Áncash</option><option>Apurímac</option>
+              <option>Arequipa</option><option>Ayacucho</option><option>Cajamarca</option>
+              <option>Callao</option><option>Cusco</option><option>Huancavelica</option>
+              <option>Huánuco</option><option>Ica</option><option>Junín</option>
+              <option>La Libertad</option><option>Lambayeque</option><option>Lima</option>
+              <option>Loreto</option><option>Madre de Dios</option><option>Moquegua</option>
+              <option>Pasco</option><option>Piura</option><option>Puno</option>
+              <option>San Martín</option><option>Tacna</option><option>Tumbes</option><option>Ucayali</option>
+            </select>
+          </div>
+          <div class="fg"><div class="fg-label">Carrera / Perfil</div>
+            <select class="fg-select" id="f-carrera" onchange="filtrar()">
+              <option value="">Todas las carreras</option>
+              <option>Administración</option><option>Contabilidad</option><option>Derecho</option>
+              <option>Economía</option><option>Educación</option><option>Enfermería</option>
+              <option>Ingeniería</option><option>Medicina</option><option>Psicología</option>
+              <option>Salud</option><option>Sistemas</option><option>Trabajo Social</option>
+            </select>
+          </div>
+          <div class="sb-divider"></div>
+          <div class="stat-box"><div class="stat-box-n" id="stat-n">—</div><div class="stat-box-l">resultados</div></div>
+          <div class="sb-divider"></div>
+          <div class="ad-side"><p>Espacio publicitario</p><strong>160×600<br/>Tu anuncio aquí</strong><br/>
+            <button style="background:var(--gold);color:#1a1a1a;border:none;padding:6px 14px;border-radius:6px;font-size:12px;font-weight:700;margin-top:8px;cursor:pointer">Anúnciate</button>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="toolbar">
+          <div>
+            <div class="res-info" id="res-lbl">Cargando...</div>
+            <div class="upd-info" id="upd-info" style="margin-top:4px"></div>
+          </div>
+          <select class="sort-sel" onchange="sortear(this.value)">
+            <option value="reciente">Más recientes</option>
+            <option value="sueldo">Mayor sueldo</option>
+            <option value="cierre">Por vencer primero</option>
+          </select>
+        </div>
+        <div class="cards" id="cards-main">
+          <div class="loading"><div class="spinner"></div><div class="loading-t">Cargando convocatorias...</div></div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div id="view-admin" style="display:none">
+  <div class="admin-wrap">
+    <div class="adm-head">
+      <div style="font-size:30px">📋</div>
+      <div><h2>Panel de Administración</h2><p>Gestiona las convocatorias y la importación automática</p></div>
+      <button class="adm-logout" onclick="logout()">Cerrar sesión</button>
+    </div>
+
+    <div class="info-github">
+      <h3>🤖 Importación automática — GitHub Actions</h3>
+      <p>Tu scraper corre <strong>cada día a las 8:00 AM</strong> automáticamente desde GitHub y actualiza el archivo <code>convocatorias.json</code>. Tu web lo lee en tiempo real.<br/><br/>
+      Para correr el scraper <strong>manualmente ahora</strong>: ve a tu repositorio en GitHub → pestaña <strong>Actions</strong> → selecciona el workflow → clic en <strong>"Run workflow"</strong>.</p>
+      <div class="src-grid">
+        <div class="src-item"><div class="src-icon">🏛️</div><div><div class="src-name">SERVIR</div><div class="src-sub">servir.gob.pe</div></div><div class="s-dot s-on"></div></div>
+        <div class="src-item"><div class="src-icon">🏥</div><div><div class="src-name">MINSA</div><div class="src-sub">gob.pe/minsa</div></div><div class="s-dot s-on"></div></div>
+        <div class="src-item"><div class="src-icon">💰</div><div><div class="src-name">SUNAT</div><div class="src-sub">sunat.gob.pe</div></div><div class="s-dot s-on"></div></div>
+        <div class="src-item"><div class="src-icon">⚖️</div><div><div class="src-name">Poder Judicial</div><div class="src-sub">pj.gob.pe</div></div><div class="s-dot s-on"></div></div>
+        <div class="src-item"><div class="src-icon">🏦</div><div><div class="src-name">Banco de la Nación</div><div class="src-sub">bn.com.pe</div></div><div class="s-dot s-on"></div></div>
+        <div class="src-item"><div class="src-icon">📚</div><div><div class="src-name">MINEDU</div><div class="src-sub">gob.pe/minedu</div></div><div class="s-dot s-on"></div></div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-card-t">+ Publicar convocatoria manualmente</div>
+      <div class="ok-banner" id="ok-banner">✅ Convocatoria publicada exitosamente</div>
+      <div class="fgrid">
+        <div class="ff full"><label>Cargo / Puesto *</label><input type="text" id="f-cargo" placeholder="Ej: Técnico Administrativo I"/></div>
+        <div class="ff full"><label>Entidad convocante *</label><input type="text" id="f-entidad" placeholder="Ej: MINSA – Hospital Rebagliati"/></div>
+        <div class="ff"><label>Modalidad</label><select id="f-mod"><option>CAS</option><option>728</option><option>Prácticas</option></select></div>
+        <div class="ff"><label>Región</label><select id="f-reg"><option>Lima</option><option>Arequipa</option><option>Cusco</option><option>La Libertad</option><option>San Martín</option><option>Piura</option><option>Junín</option><option>Puno</option><option>Loreto</option><option>Cajamarca</option><option>Áncash</option><option>Lambayeque</option><option>Callao</option><option>Ica</option><option>Tacna</option><option>Ucayali</option></select></div>
+        <div class="ff"><label>Remuneración (S/)</label><input type="number" id="f-sueldo" placeholder="2500"/></div>
+        <div class="ff"><label>Vacantes</label><input type="number" id="f-vac" placeholder="1"/></div>
+        <div class="ff"><label>Carrera / Perfil</label><select id="f-carr"><option>Administración</option><option>Contabilidad</option><option>Derecho</option><option>Economía</option><option>Educación</option><option>Ingeniería</option><option>Salud</option><option>Sistemas</option><option>Trabajo Social</option></select></div>
+        <div class="ff"><label>Fecha de cierre</label><input type="date" id="f-cierre"/></div>
+        <div class="ff"><label>Link para postular</label><input type="text" id="f-link" placeholder="https://..."/></div>
+        <div class="ff"><label>Imagen (URL opcional)</label><input type="text" id="f-img" placeholder="https://..."/></div>
+        <div class="ff"><label>Marcar como</label><select id="f-nuevo"><option value="si">🆕 Nuevo</option><option value="no">Normal</option></select></div>
+        <div class="ff full"><label>Requisitos (uno por línea)</label><textarea id="f-req" placeholder="Título profesional en...&#10;Experiencia mínima de..."></textarea></div>
+        <div class="ff full"><label>Descripción del puesto</label><textarea id="f-desc" placeholder="Funciones y responsabilidades..."></textarea></div>
+      </div>
+      <button class="btn-pub" onclick="publicar()">Publicar convocatoria</button>
+    </div>
+
+    <div class="adm-table">
+      <div class="adm-thead">
+        <span>Convocatorias (<span id="adm-cnt">0</span>)</span>
+        <span style="font-size:12px;color:var(--text3);font-weight:400">Las automáticas vienen de GitHub · Las manuales del navegador</span>
+      </div>
+      <div id="adm-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="backdrop" id="modal" style="display:none" onclick="closeModal(event)">
+  <div class="mbox" onclick="event.stopPropagation()">
+    <div class="mhead">
+      <div><div id="m-tag" style="margin-bottom:6px"></div><h2 id="m-title"></h2><div class="mhead-ent" id="m-ent"></div></div>
+      <button class="mclose" onclick="closeModal()">✕</button>
+    </div>
+    <div class="mbody">
+      <div class="m-banner" id="m-banner"></div>
+      <div class="igrid" id="m-info"></div>
+      <div class="msect"><div class="msect-t">Requisitos</div><ul class="req-ul" id="m-reqs"></ul></div>
+      <div class="msect"><div class="msect-t">Descripción del puesto</div><p style="font-size:13px;color:#334155;line-height:1.7" id="m-desc"></p></div>
+    </div>
+    <div class="mfoot">
+      <button class="btn-save" onclick="alert('⭐ Próximamente disponible')">⭐ Guardar</button>
+      <button class="btn-close-m" onclick="closeModal()">Cerrar</button>
+      <button class="btn-post" id="btn-post" onclick="postular()">Postular ahora →</button>
+    </div>
+  </div>
+</div>
+
+<!-- LOGIN -->
+<div class="login-back" id="login" style="display:none">
+  <div class="lbox">
+    <div class="lhead"><h2>🔐 Acceso Admin</h2><p>Panel de administración protegido</p></div>
+    <div class="lbody">
+      <div class="lerr" id="lerr">❌ Contraseña incorrecta</div>
+      <div class="lfield"><label>Contraseña</label><input type="password" id="lpass" placeholder="Tu contraseña" onkeydown="if(event.key==='Enter')doLogin()"/></div>
+      <button class="btn-login" onclick="doLogin()">Entrar</button>
+      <button class="btn-cancel-l" onclick="closeLogin()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div><div class="f-logo">Convocatorias<span>Perú</span></div>
+      <p class="f-desc">Portal de convocatorias del sector público peruano. Importamos automáticamente de portales oficiales del Estado cada día.</p>
+    </div>
+    <div class="f-col"><h4>Modalidades</h4><ul>
+      <li><a href="#" onclick="filterAndGo('CAS');return false">Contrato CAS</a></li>
+      <li><a href="#" onclick="filterAndGo('728');return false">Régimen 728</a></li>
+      <li><a href="#" onclick="filterAndGo('Prácticas');return false">Prácticas</a></li>
+    </ul></div>
+    <div class="f-col"><h4>Regiones</h4><ul>
+      <li><a href="#" onclick="filterRegion('Lima');return false">Lima</a></li>
+      <li><a href="#" onclick="filterRegion('Cusco');return false">Cusco</a></li>
+      <li><a href="#" onclick="filterRegion('Arequipa');return false">Arequipa</a></li>
+      <li><a href="#" onclick="filterRegion('La Libertad');return false">La Libertad</a></li>
+    </ul></div>
+    <div class="f-col"><h4>Información</h4><ul>
+      <li><a href="#">¿Cómo postular?</a></li>
+      <li><a href="#">CAS vs Régimen 728</a></li>
+      <li><a href="#">Anúnciate</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul></div>
+  </div>
+  <div class="f-bottom">
+    <span>© 2026 ConvocatoriasPerúHoy.com</span>
+    <span>🇵🇪 Sector Público · Auto-actualizado diariamente</span>
+  </div>
+</footer>
+
+<script>
+const PASS='Contra01';
+const SK='cph_manual_v3';
+const ICONS={CAS:'🏛️','728':'📄','Prácticas':'🎓'};
+const MCLS={CAS:'m-cas','728':'m-728','Prácticas':'m-prac'};
+const ACLS={CAS:'accent-cas','728':'accent-728','Prácticas':'accent-prac'};
+
+let dbAuto=[];   // viene del JSON (GitHub)
+let dbManual=loadManual(); // viene del localStorage
+let db=[];       // combinado
+let F={modalidad:'Todos',region:'',carrera:''};
+let filtered=[];
+let loggedIn=false;
+let ultimaActualizacion='';
+
+function loadManual(){try{const s=localStorage.getItem(SK);return s?JSON.parse(s):[]}catch{return[]}}
+function saveManual(){try{localStorage.setItem(SK,JSON.stringify(dbManual))}catch{}}
+
+// ── CARGAR JSON DE GITHUB ──
+async function cargarJSON(){
+  try{
+    const r=await fetch(JSON_URL+'?t='+Date.now());
+    if(!r.ok) throw new Error('No se pudo cargar');
+    const data=await r.json();
+    dbAuto=data.convocatorias||[];
+    ultimaActualizacion=data.ultima_actualizacion||'';
+    console.log(`✅ ${dbAuto.length} convocatorias cargadas del JSON automático`);
+  }catch(e){
+    console.log('⚠ JSON automático no disponible aún, usando datos locales');
+    dbAuto=DB_FALLBACK;
+  }
+  combinar();
+  renderInicio();
+  if(document.getElementById('view-convocatorias').style.display!=='none') filtrar();
+  actualizarStatus();
+}
+
+function combinar(){
+  // Combina automáticas + manuales, las manuales van primero
+  const idsAuto=new Set(dbAuto.map(c=>c.id));
+  const manualesUnicos=dbManual.filter(c=>!idsAuto.has(c.id));
+  db=[...manualesUnicos,...dbAuto];
+  filtered=[...db];
+}
+
+function actualizarStatus(){
+  const el=document.getElementById('auto-txt');
+  if(el){
+    if(ultimaActualizacion) el.textContent=`Actualizado automáticamente: ${ultimaActualizacion}`;
+    else el.textContent=`${db.length} convocatorias activas · Auto-actualizado diariamente`;
+  }
+  const upd=document.getElementById('upd-info');
+  if(upd&&ultimaActualizacion){
+    upd.innerHTML=`<span class="upd-dot"></span> Última actualización automática: ${ultimaActualizacion}`;
+  }
+}
+
+// ── UTILS ──
+function dias(f){return Math.max(0,Math.round((new Date(f+'T00:00:00')-new Date())/86400000))}
+function fmt(f){return new Date(f+'T00:00:00').toLocaleDateString('es-PE',{day:'2-digit',month:'short',year:'numeric'})}
+function fmts(s){return'S/ '+Number(s).toLocaleString('es-PE')}
+
+// ── TICKER ──
+function buildTicker(){
+  const items=db.slice(0,20).map(c=>`<span class="tick"><span class="tick-dot"></span>${ICONS[c.modalidad]} ${c.cargo} — ${c.entidad}</span>`).join('');
+  const t=document.getElementById('ticker');
+  if(t) t.innerHTML=items+items;
+}
+
+// ── VISTAS ──
+function showView(v){
+  ['inicio','convocatorias','admin'].forEach(x=>{
+    const el=document.getElementById('view-'+x);if(el)el.style.display=x===v?'block':'none';
+    const b=document.getElementById('nav-'+x);if(b)b.classList.toggle('on',x===v);
+  });
+  if(v==='convocatorias')filtrar();
+  if(v==='admin')renderAdmin();
+  if(v==='inicio')renderInicio();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function goHome(){showView('inicio')}
+
+// ── CARD HTML ──
+function cardHTML(c){
+  const d=dias(c.cierre);
+  const db_=d<=2?`<span class="days days-hot">⚠ ${d} días</span>`:d<=5?`<span class="days days-mid">${d} días</span>`:`<span class="days days-ok">${d} días</span>`;
+  const nb=c.nuevo==='si'?'<span class="nbadge">NUEVO</span>':c.nuevo==='auto'?'<span class="auto-badge">🤖 AUTO</span>':'';
+  return`<div class="jcard" onclick="openModal(${c.id})">
+    <div class="jcard-accent ${ACLS[c.modalidad]||'accent-cas'}"></div>
+    <div class="jcard-logo">${c.imagen?`<img src="${c.imagen}" alt="${c.cargo}" onerror="this.parentElement.innerHTML='${ICONS[c.modalidad]}'">`:ICONS[c.modalidad]}</div>
+    <div class="jcard-body">
+      <div class="jcard-info">
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;margin-bottom:6px">
+          <span class="jcard-modal ${MCLS[c.modalidad]||'m-cas'}">${ICONS[c.modalidad]} ${c.modalidad}</span>${nb}
+        </div>
+        <div class="jcard-title">${c.cargo}</div>
+        <div class="jcard-entidad">${c.entidad}</div>
+        <div class="jcard-tags">
+          <span class="jtag jtag-loc">📍 ${c.region}</span>
+          <span class="jtag jtag-sal">${fmts(c.sueldo)}</span>
+          <span class="jtag jtag-date">📅 ${fmt(c.cierre)}</span>
+        </div>
+      </div>
+      <div class="jcard-right">
+        <button class="btn-det" onclick="event.stopPropagation();openModal(${c.id})">Ver detalle</button>
+        ${db_}
+        <span class="jcard-vac">${c.vacantes} vacante${c.vacantes>1?'s':''}</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── FILTRAR ──
+function filtrar(){
+  const q=(document.getElementById('srch').value||'').toLowerCase().trim();
+  F.region=(document.getElementById('f-region')||{value:''}).value;
+  F.carrera=(document.getElementById('f-carrera')||{value:''}).value;
+  filtered=db.filter(c=>{
+    const mQ=!q||c.cargo.toLowerCase().includes(q)||c.entidad.toLowerCase().includes(q)||c.region.toLowerCase().includes(q)||(c.carrera||'').toLowerCase().includes(q);
+    const mM=F.modalidad==='Todos'||c.modalidad===F.modalidad;
+    const mR=!F.region||c.region===F.region;
+    const mC=!F.carrera||c.carrera===F.carrera;
+    return mQ&&mM&&mR&&mC;
+  });
+  renderCards();
+}
+function sortear(m){
+  if(m==='sueldo')filtered.sort((a,b)=>b.sueldo-a.sueldo);
+  else if(m==='cierre')filtered.sort((a,b)=>new Date(a.cierre)-new Date(b.cierre));
+  else filtered.sort((a,b)=>b.id-a.id);
+  renderCards();
+}
+function renderCards(){
+  const c=document.getElementById('cards-main'),l=document.getElementById('res-lbl'),s=document.getElementById('stat-n');
+  if(!c)return;
+  c.innerHTML=filtered.length===0?`<div class="empty"><div class="empty-i">🔍</div><p class="empty-t">No encontramos convocatorias con esos filtros.</p></div>`:filtered.map(x=>cardHTML(x)).join('');
+  if(l)l.innerHTML=`Mostrando <strong>${filtered.length}</strong> de <strong>${db.length}</strong> convocatorias`;
+  if(s)s.textContent=filtered.length;
+}
+function togglePill(el,k,v){el.closest('.pill-row').querySelectorAll('.pill').forEach(p=>p.classList.remove('on'));el.classList.add('on');F[k]=v;filtrar();}
+function catFilter(el,v){document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('on'));el.classList.add('on');F.modalidad=v||'Todos';F.carrera='';showView('convocatorias');}
+function catCarrera(el,v){document.querySelectorAll('.cat-btn').forEach(b=>b.classList.remove('on'));el.classList.add('on');F.modalidad='Todos';F.carrera=v;showView('convocatorias');}
+function filterAndGo(m){F.modalidad=m;F.carrera='';showView('convocatorias');}
+function filterRegion(r){F.region=r;showView('convocatorias');setTimeout(()=>{const s=document.getElementById('f-region');if(s)s.value=r;filtrar();},60);}
+function quickSearch(){const m=document.getElementById('qk-mod').value,r=document.getElementById('qk-reg').value;F.modalidad=m||'Todos';F.region=r;showView('convocatorias');setTimeout(()=>{const fr=document.getElementById('f-region');if(fr)fr.value=r;filtrar();},60);}
+
+// ── INICIO ──
+function renderInicio(){
+  document.getElementById('cnt-t').textContent=db.length;
+  document.getElementById('cnt-e').textContent=new Set(db.map(c=>c.entidad)).size;
+  document.getElementById('cnt-r').textContent=new Set(db.map(c=>c.region)).size;
+  document.getElementById('cnt-n').textContent=db.filter(c=>c.nuevo==='si'||c.nuevo==='auto').length;
+  const ic=document.getElementById('inicio-cards');
+  if(ic)ic.innerHTML=db.slice(0,6).map(c=>cardHTML(c)).join('');
+  buildTicker();
+}
+
+// ── MODAL ──
+function openModal(id){
+  const c=db.find(x=>x.id===id);if(!c)return;
+  document.getElementById('m-tag').innerHTML=`<span class="jcard-modal ${MCLS[c.modalidad]}">${ICONS[c.modalidad]} ${c.modalidad}</span>`;
+  document.getElementById('m-title').textContent=c.cargo;
+  document.getElementById('m-ent').textContent=c.entidad;
+  const ib=document.getElementById('m-banner');
+  ib.innerHTML=c.imagen?`<img src="${c.imagen}" alt="${c.cargo}">`:`<span style="font-size:52px">${ICONS[c.modalidad]}</span>`;
+  const d=dias(c.cierre);
+  document.getElementById('m-info').innerHTML=[
+    ['Modalidad',c.modalidad,''],['Región',c.region,''],
+    ['Remuneración',fmts(c.sueldo),''],['Vacantes',c.vacantes,''],
+    ['Fecha cierre',fmt(c.cierre),''],['Días restantes',d+' días',d<=3?'color:var(--red)':'color:var(--green)']
+  ].map(([l,v,s])=>`<div class="itile"><div class="itile-l">${l}</div><div class="itile-v" style="${s}">${v}</div></div>`).join('');
+  document.getElementById('m-reqs').innerHTML=(c.requisitos||[]).map(r=>`<li>${r}</li>`).join('');
+  document.getElementById('m-desc').textContent=c.descripcion||'No especificado.';
+  document.getElementById('btn-post').setAttribute('data-link',c.link||'');
+  document.getElementById('modal').style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function closeModal(e){if(!e||e.target===document.getElementById('modal')){document.getElementById('modal').style.display='none';document.body.style.overflow='';}}
+function postular(){const l=document.getElementById('btn-post').getAttribute('data-link');if(l)window.open(l,'_blank');else alert('Visita el portal oficial de la entidad para postular.');}
+
+// ── LOGIN ──
+function abrirAdmin(){if(loggedIn){showView('admin');return;}document.getElementById('login').style.display='flex';document.getElementById('lpass').value='';document.getElementById('lerr').style.display='none';setTimeout(()=>document.getElementById('lpass').focus(),80);}
+function closeLogin(){document.getElementById('login').style.display='none';}
+function doLogin(){const p=document.getElementById('lpass').value;if(p===PASS){loggedIn=true;closeLogin();showView('admin');}else{document.getElementById('lerr').style.display='block';document.getElementById('lpass').value='';document.getElementById('lpass').focus();}}
+function logout(){loggedIn=false;showView('inicio');}
+
+// ── ADMIN ──
+function publicar(){
+  const cargo=document.getElementById('f-cargo').value.trim(),entidad=document.getElementById('f-entidad').value.trim();
+  if(!cargo||!entidad){alert('⚠ Completa Cargo y Entidad.');return;}
+  const nueva={id:Date.now(),cargo,entidad,
+    modalidad:document.getElementById('f-mod').value,region:document.getElementById('f-reg').value,
+    carrera:document.getElementById('f-carr').value,sueldo:parseInt(document.getElementById('f-sueldo').value)||0,
+    cierre:document.getElementById('f-cierre').value||'2026-12-31',vacantes:parseInt(document.getElementById('f-vac').value)||1,
+    nuevo:document.getElementById('f-nuevo').value,link:document.getElementById('f-link').value.trim(),
+    imagen:document.getElementById('f-img').value.trim(),
+    requisitos:(document.getElementById('f-req').value||'').split('\n').filter(Boolean),
+    descripcion:document.getElementById('f-desc').value||''};
+  dbManual.unshift(nueva);saveManual();combinar();
+  ['f-cargo','f-entidad','f-sueldo','f-vac','f-req','f-desc','f-link','f-img','f-cierre'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
+  const b=document.getElementById('ok-banner');b.style.display='block';setTimeout(()=>b.style.display='none',4000);
+  renderAdmin();buildTicker();renderInicio();
+}
+function eliminar(id){
+  if(!confirm('¿Eliminar esta convocatoria?'))return;
+  dbManual=dbManual.filter(c=>c.id!==id);saveManual();combinar();renderAdmin();buildTicker();renderInicio();
+}
+function renderAdmin(){
+  document.getElementById('adm-cnt').textContent=db.length;
+  document.getElementById('adm-list').innerHTML=db.length===0
+    ?'<div style="padding:24px;text-align:center;color:var(--text3)">No hay convocatorias aún.</div>'
+    :db.map(c=>`<div class="adm-row"><span style="font-size:20px">${ICONS[c.modalidad]||'📄'}</span>
+      <div style="flex:1;min-width:0"><div class="adm-row-t">${c.cargo} ${c.nuevo==='si'?'<span class="nbadge">NUEVO</span>':c.nuevo==='auto'?'<span class="auto-badge">🤖 AUTO</span>':''}</div>
+      <div class="adm-row-s">${c.entidad} · ${c.region} · ${fmts(c.sueldo)} · Cierre: ${fmt(c.cierre)}</div></div>
+      ${dbManual.find(m=>m.id===c.id)?`<button class="btn-del" onclick="eliminar(${c.id})">Eliminar</button>`:'<span style="font-size:10px;color:var(--text3)">Auto</span>'}
+    </div>`).join('');
+}
+
+// ── FALLBACK DATA (si GitHub aún no tiene el JSON) ──
+const DB_FALLBACK=[
+  {id:1,cargo:'Técnico/a Administrativo',entidad:'Dir. Sub Regional de Salud Huallaga Central',modalidad:'CAS',region:'San Martín',carrera:'Administración',sueldo:1800,cierre:'2026-06-15',vacantes:2,nuevo:'si',link:'https://www.gob.pe',imagen:'',requisitos:['Título técnico en Administración','Experiencia mínima 1 año en sector público','Conocimiento en SIGA y MEF'],descripcion:'Apoyo en la gestión administrativa y logística de la Dirección Sub Regional de Salud.'},
+  {id:2,cargo:'Enfermera/o Asistencial',entidad:'MINSA – Hospital Regional del Cusco',modalidad:'CAS',region:'Cusco',carrera:'Salud',sueldo:3200,cierre:'2026-06-20',vacantes:5,nuevo:'si',link:'https://www.gob.pe',imagen:'',requisitos:['Título profesional de Enfermería','Colegiatura vigente','Experiencia en UCI mín. 2 años'],descripcion:'Atención integral de pacientes en hospitalización y emergencias.'},
+  {id:3,cargo:'Especialista Legal',entidad:'Poder Judicial – Lima',modalidad:'728',region:'Lima',carrera:'Derecho',sueldo:4500,cierre:'2026-06-25',vacantes:1,nuevo:'no',link:'https://www.gob.pe',imagen:'',requisitos:['Abogado colegiado','5 años en litigios'],descripcion:'Asesoramiento legal y representación institucional.'},
+  {id:4,cargo:'Practicante – Contabilidad',entidad:'SUNAT – Lima Norte',modalidad:'Prácticas',region:'Lima',carrera:'Contabilidad',sueldo:1025,cierre:'2026-06-10',vacantes:3,nuevo:'si',link:'https://www.gob.pe',imagen:'',requisitos:['8° al 10° ciclo de Contabilidad','Excel avanzado'],descripcion:'Apoyo en auditoría tributaria y control de declaraciones.'},
+  {id:5,cargo:'Ingeniero/a Civil',entidad:'Gobierno Regional de Arequipa',modalidad:'CAS',region:'Arequipa',carrera:'Ingeniería',sueldo:5000,cierre:'2026-07-01',vacantes:2,nuevo:'no',link:'https://www.gob.pe',imagen:'',requisitos:['Ingeniería Civil','CIP vigente','3 años en obras públicas'],descripcion:'Supervisión de proyectos de infraestructura vial y saneamiento.'},
+];
+
+// ── INIT ──
+cargarJSON();
+</script>
+</body>
+</html>

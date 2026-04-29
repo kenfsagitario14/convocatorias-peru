@@ -1,0 +1,38 @@
+name: 🤖 Scraper Automático - ConvocatoriasPerúHoy
+
+on:
+  schedule:
+    # Corre todos los días a las 8:00 AM hora Perú (UTC-5 = 13:00 UTC)
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+    # También permite correrlo manualmente desde GitHub
+
+jobs:
+  scraper:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Instalar dependencias
+        run: |
+          pip install requests beautifulsoup4 lxml
+
+      - name: 🔄 Correr scraper
+        run: python scraper.py
+
+      - name: 💾 Guardar convocatorias.json en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add convocatorias.json
+          git diff --staged --quiet || git commit -m "🤖 Auto: convocatorias actualizadas $(date '+%Y-%m-%d %H:%M UTC')"
+          git push

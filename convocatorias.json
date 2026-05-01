@@ -1,6 +1,6 @@
 {
-  "ultima_actualizacion": "2026-04-30 17:53:33",
-  "total": 52,
+  "ultima_actualizacion": "2026-05-01 16:15:14",
+  "total": 68,
   "fuentes": [
     "SERVIR",
     "MINSA",
@@ -228,6 +228,30 @@
       "descripcion": "Convocatoria para el puesto de Supervisor de Obras en Poder Judicial. Se requiere perfil profesional en Ingeniería con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
+      "id": 3587469950,
+      "cargo": "Técnico en Enfermería",
+      "entidad": "MINEDU",
+      "modalidad": "CAS",
+      "region": "Lima",
+      "carrera": "Salud",
+      "sueldo": 4000,
+      "cierre": "2026-05-30",
+      "vacantes": 3,
+      "nuevo": "auto",
+      "link": "https://www.gob.pe/institucion/minedu/convocatorias",
+      "imagen": "",
+      "fuente": "MINEDU",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Salud aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Técnico en Enfermería en MINEDU. Se requiere perfil profesional en Salud con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
       "id": 3503742679,
       "cargo": "Técnico Administrativo",
       "entidad": "Poder Judicial",
@@ -250,6 +274,30 @@
         "Conocimientos en Administración aplicados al sector público"
       ],
       "descripcion": "Convocatoria para el puesto de Técnico Administrativo en Poder Judicial. Se requiere perfil profesional en Administración con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 3500868687,
+      "cargo": "Especialista UGEL",
+      "entidad": "Gobierno Regional de Junín",
+      "modalidad": "CAS",
+      "region": "Junín",
+      "carrera": "Educación",
+      "sueldo": 4000,
+      "cierre": "2026-05-30",
+      "vacantes": 2,
+      "nuevo": "auto",
+      "link": "https://www.servir.gob.pe/convocatorias/",
+      "imagen": "",
+      "fuente": "SERVIR",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Educación aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Especialista UGEL en Gobierno Regional de Junín. Se requiere perfil profesional en Educación con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
       "id": 3400452391,
@@ -298,6 +346,54 @@
         "Conocimientos en Educación aplicados al sector público"
       ],
       "descripcion": "Convocatoria para el puesto de Supervisor Educativo en Gobierno Regional de Arequipa. Se requiere perfil profesional en Educación con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 3093394608,
+      "cargo": "Coordinador Administrativo",
+      "entidad": "Poder Judicial",
+      "modalidad": "CAS",
+      "region": "Lima",
+      "carrera": "Administración",
+      "sueldo": 4500,
+      "cierre": "2026-06-04",
+      "vacantes": 1,
+      "nuevo": "auto",
+      "link": "https://www.pj.gob.pe/wps/wcm/connect/pj/as-pj-convocatoria",
+      "imagen": "",
+      "fuente": "Poder Judicial",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Administración aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Coordinador Administrativo en Poder Judicial. Se requiere perfil profesional en Administración con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 3063782738,
+      "cargo": "Coordinador Pedagógico",
+      "entidad": "Gobierno Regional de La Libertad",
+      "modalidad": "CAS",
+      "region": "La Libertad",
+      "carrera": "Educación",
+      "sueldo": 4500,
+      "cierre": "2026-05-27",
+      "vacantes": 3,
+      "nuevo": "auto",
+      "link": "https://www.servir.gob.pe/convocatorias/",
+      "imagen": "",
+      "fuente": "SERVIR",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Educación aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Coordinador Pedagógico en Gobierno Regional de La Libertad. Se requiere perfil profesional en Educación con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
       "id": 3045382586,
@@ -468,6 +564,30 @@
       "descripcion": "Convocatoria para el puesto de Especialista en Presupuesto en MINEDU. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
+      "id": 2737160959,
+      "cargo": "Especialista Administrativo",
+      "entidad": "SUNAT",
+      "modalidad": "CAS",
+      "region": "Lima",
+      "carrera": "Administración",
+      "sueldo": 1800,
+      "cierre": "2026-05-06",
+      "vacantes": 4,
+      "nuevo": "auto",
+      "link": "https://www.sunat.gob.pe/rrhh/convocatorias.html",
+      "imagen": "",
+      "fuente": "SUNAT",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Administración aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Especialista Administrativo en SUNAT. Se requiere perfil profesional en Administración con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
       "id": 2585501563,
       "cargo": "Jefe de Asesoría Jurídica",
       "entidad": "MINSA",
@@ -490,6 +610,78 @@
         "Conocimientos en Derecho aplicados al sector público"
       ],
       "descripcion": "Convocatoria para el puesto de Jefe de Asesoría Jurídica en MINSA. Se requiere perfil profesional en Derecho con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 2513281724,
+      "cargo": "Planificador Económico",
+      "entidad": "Banco de la Nación",
+      "modalidad": "728",
+      "region": "Lima",
+      "carrera": "Economía",
+      "sueldo": 4500,
+      "cierre": "2026-05-17",
+      "vacantes": 2,
+      "nuevo": "auto",
+      "link": "https://www.bn.com.pe/nosotros/relaciones_laborales/convocatoria.asp",
+      "imagen": "",
+      "fuente": "Banco de la Nación",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional colegiado y habilitado",
+        "Experiencia mínima de 3 años en el sector",
+        "Conocimiento en herramientas de gestión pública",
+        "No registrar antecedentes penales ni judiciales",
+        "Conocimientos en Economía aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Planificador Económico en Banco de la Nación. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 2509436989,
+      "cargo": "Especialista en Educación",
+      "entidad": "Banco de la Nación",
+      "modalidad": "728",
+      "region": "Lima",
+      "carrera": "Educación",
+      "sueldo": 5500,
+      "cierre": "2026-06-12",
+      "vacantes": 3,
+      "nuevo": "auto",
+      "link": "https://www.bn.com.pe/nosotros/relaciones_laborales/convocatoria.asp",
+      "imagen": "",
+      "fuente": "Banco de la Nación",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional colegiado y habilitado",
+        "Experiencia mínima de 3 años en el sector",
+        "Conocimiento en herramientas de gestión pública",
+        "No registrar antecedentes penales ni judiciales",
+        "Conocimientos en Educación aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Especialista en Educación en Banco de la Nación. Se requiere perfil profesional en Educación con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 2393190648,
+      "cargo": "Desarrollador Web",
+      "entidad": "MINSA",
+      "modalidad": "CAS",
+      "region": "Lima",
+      "carrera": "Sistemas",
+      "sueldo": 3500,
+      "cierre": "2026-06-13",
+      "vacantes": 1,
+      "nuevo": "auto",
+      "link": "https://www.gob.pe/institucion/minsa/convocatorias",
+      "imagen": "",
+      "fuente": "MINSA",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Sistemas aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Desarrollador Web en MINSA. Se requiere perfil profesional en Sistemas con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
       "id": 2390265067,
@@ -610,6 +802,78 @@
         "Conocimientos en Economía aplicados al sector público"
       ],
       "descripcion": "Convocatoria para el puesto de Economista en Banco de la Nación. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 2154264018,
+      "cargo": "Asesor Jurídico",
+      "entidad": "Dirección Sub Regional de Salud",
+      "modalidad": "CAS",
+      "region": "San Martín",
+      "carrera": "Derecho",
+      "sueldo": 2200,
+      "cierre": "2026-05-29",
+      "vacantes": 2,
+      "nuevo": "auto",
+      "link": "https://www.servir.gob.pe/convocatorias/",
+      "imagen": "",
+      "fuente": "SERVIR",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Derecho aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Asesor Jurídico en Dirección Sub Regional de Salud. Se requiere perfil profesional en Derecho con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 2059675360,
+      "cargo": "Jefe de Contabilidad",
+      "entidad": "SUNAT",
+      "modalidad": "CAS",
+      "region": "Lima",
+      "carrera": "Contabilidad",
+      "sueldo": 1800,
+      "cierre": "2026-06-10",
+      "vacantes": 1,
+      "nuevo": "auto",
+      "link": "https://www.sunat.gob.pe/rrhh/convocatorias.html",
+      "imagen": "",
+      "fuente": "SUNAT",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Contabilidad aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Jefe de Contabilidad en SUNAT. Se requiere perfil profesional en Contabilidad con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 2026827673,
+      "cargo": "Especialista en Educación",
+      "entidad": "MINEDU",
+      "modalidad": "CAS",
+      "region": "Lima",
+      "carrera": "Educación",
+      "sueldo": 4500,
+      "cierre": "2026-06-07",
+      "vacantes": 4,
+      "nuevo": "auto",
+      "link": "https://www.servir.gob.pe/convocatorias/",
+      "imagen": "",
+      "fuente": "SERVIR",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Educación aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Especialista en Educación en MINEDU. Se requiere perfil profesional en Educación con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
       "id": 1990791734,
@@ -996,6 +1260,30 @@
       "descripcion": "Convocatoria para el puesto de Economista en MINEDU. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
+      "id": 911594369,
+      "cargo": "Ingeniero de Proyectos",
+      "entidad": "Banco de la Nación",
+      "modalidad": "728",
+      "region": "Lima",
+      "carrera": "Ingeniería",
+      "sueldo": 3500,
+      "cierre": "2026-06-03",
+      "vacantes": 5,
+      "nuevo": "auto",
+      "link": "https://www.bn.com.pe/nosotros/relaciones_laborales/convocatoria.asp",
+      "imagen": "",
+      "fuente": "Banco de la Nación",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional colegiado y habilitado",
+        "Experiencia mínima de 3 años en el sector",
+        "Conocimiento en herramientas de gestión pública",
+        "No registrar antecedentes penales ni judiciales",
+        "Conocimientos en Ingeniería aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Ingeniero de Proyectos en Banco de la Nación. Se requiere perfil profesional en Ingeniería con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
       "id": 851759647,
       "cargo": "Obstetra",
       "entidad": "Banco de la Nación",
@@ -1066,6 +1354,30 @@
         "Conocimientos en Contabilidad aplicados al sector público"
       ],
       "descripcion": "Convocatoria para el puesto de Jefe de Contabilidad en Banco de la Nación. Se requiere perfil profesional en Contabilidad con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 691389875,
+      "cargo": "Especialista Legal",
+      "entidad": "Gobierno Regional de San Martín",
+      "modalidad": "CAS",
+      "region": "San Martín",
+      "carrera": "Derecho",
+      "sueldo": 2000,
+      "cierre": "2026-05-11",
+      "vacantes": 1,
+      "nuevo": "auto",
+      "link": "https://www.regionlima.gob.pe/convocatorias",
+      "imagen": "",
+      "fuente": "Gobierno Regional Lima",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Derecho aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Especialista Legal en Gobierno Regional de San Martín. Se requiere perfil profesional en Derecho con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
       "id": 680028874,
@@ -1164,6 +1476,54 @@
       "descripcion": "Convocatoria para el puesto de Planificador Económico en Gobierno Regional de Arequipa. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
+      "id": 384478757,
+      "cargo": "Técnico en Contabilidad",
+      "entidad": "Banco de la Nación",
+      "modalidad": "728",
+      "region": "Lima",
+      "carrera": "Contabilidad",
+      "sueldo": 3000,
+      "cierre": "2026-05-22",
+      "vacantes": 1,
+      "nuevo": "auto",
+      "link": "https://www.bn.com.pe/nosotros/relaciones_laborales/convocatoria.asp",
+      "imagen": "",
+      "fuente": "Banco de la Nación",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional colegiado y habilitado",
+        "Experiencia mínima de 3 años en el sector",
+        "Conocimiento en herramientas de gestión pública",
+        "No registrar antecedentes penales ni judiciales",
+        "Conocimientos en Contabilidad aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Técnico en Contabilidad en Banco de la Nación. Se requiere perfil profesional en Contabilidad con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 350697228,
+      "cargo": "Planificador Económico",
+      "entidad": "Gobierno Regional de Cusco",
+      "modalidad": "CAS",
+      "region": "Cusco",
+      "carrera": "Economía",
+      "sueldo": 3500,
+      "cierre": "2026-06-02",
+      "vacantes": 5,
+      "nuevo": "auto",
+      "link": "https://www.regionlima.gob.pe/convocatorias",
+      "imagen": "",
+      "fuente": "Gobierno Regional Lima",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Economía aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Planificador Económico en Gobierno Regional de Cusco. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
       "id": 297327055,
       "cargo": "Jefe de Oficina Administrativa",
       "entidad": "Banco de la Nación",
@@ -1210,6 +1570,30 @@
         "Conocimientos en Economía aplicados al sector público"
       ],
       "descripcion": "Convocatoria para el puesto de Jefe de Planificación en UGEL Lima Norte. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
+    },
+    {
+      "id": 54067830,
+      "cargo": "Economista",
+      "entidad": "Dirección Sub Regional de Salud",
+      "modalidad": "CAS",
+      "region": "San Martín",
+      "carrera": "Economía",
+      "sueldo": 4500,
+      "cierre": "2026-05-21",
+      "vacantes": 2,
+      "nuevo": "auto",
+      "link": "https://www.servir.gob.pe/convocatorias/",
+      "imagen": "",
+      "fuente": "SERVIR",
+      "fecha_scraping": "2026-05-01 16:15",
+      "requisitos": [
+        "Título profesional o técnico según perfil requerido",
+        "Experiencia mínima de 1 año en el sector público",
+        "No tener impedimento para contratar con el Estado",
+        "Disponibilidad inmediata a tiempo completo",
+        "Conocimientos en Economía aplicados al sector público"
+      ],
+      "descripcion": "Convocatoria para el puesto de Economista en Dirección Sub Regional de Salud. Se requiere perfil profesional en Economía con experiencia comprobada. El proceso de selección incluye evaluación curricular, prueba técnica y entrevista personal."
     },
     {
       "id": 41996391,

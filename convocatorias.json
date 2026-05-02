@@ -1,14 +1,9 @@
 {
-  "ultima_actualizacion": "2026-05-01 16:15:14",
+  "ultima_actualizacion": "2026-05-02 03:59:23",
   "total": 68,
+  "nuevas_esta_ejecucion": 0,
   "fuentes": [
-    "SERVIR",
-    "MINSA",
-    "SUNAT",
-    "Poder Judicial",
-    "Banco de la Nación",
-    "MINEDU",
-    "Gobierno Regional Lima"
+    "SERVIR - app.servir.gob.pe"
   ],
   "convocatorias": [
     {

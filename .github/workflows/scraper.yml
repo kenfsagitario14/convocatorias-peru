@@ -1,11 +1,16 @@
-name: 🤖 Scraper Automático - ConvocatoriasPerúHoy
+name: 🤖 Scraper SERVIR — ConvocatoriasPerúHoy
 
 on:
   schedule:
-    # Corre todos los días a las 8:00 AM hora Perú (UTC-5 = 13:00 UTC)
-    - cron: '0 13 * * *'
+    # Lunes a viernes a las 8:00 AM hora Perú (UTC-5 = 13:00 UTC)
+    - cron: '0 13 * * 1-5'
   workflow_dispatch:
-    # También permite correrlo manualmente desde GitHub
+    inputs:
+      paginas:
+        description: 'Número de páginas a scrapear'
+        required: false
+        default: '5'
+        type: string
 
 jobs:
   scraper:
@@ -17,22 +22,38 @@ jobs:
       - name: 📥 Descargar repositorio
         uses: actions/checkout@v4
 
-      - name: 🐍 Configurar Python
+      - name: 🐍 Configurar Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 📦 Instalar dependencias
+      - name: 🌐 Instalar Google Chrome
         run: |
-          pip install requests beautifulsoup4 lxml
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update -q
+          sudo apt-get install -y google-chrome-stable
+          google-chrome --version
 
-      - name: 🔄 Correr scraper
-        run: python scraper.py
+      - name: 🔧 Instalar ChromeDriver compatible
+        run: |
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+')
+          pip install webdriver-manager selenium
 
-      - name: 💾 Guardar convocatorias.json en el repositorio
+      - name: 📦 Instalar dependencias Python
+        run: |
+          pip install selenium webdriver-manager
+
+      - name: 🔄 Ejecutar scraper SERVIR
+        run: |
+          PAGINAS=${{ github.event.inputs.paginas || '5' }}
+          echo "▶ Scrapeando $PAGINAS páginas de SERVIR..."
+          python scraper_servir_v3.py --paginas $PAGINAS
+
+      - name: 💾 Guardar resultados en el repositorio
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add convocatorias.json
-          git diff --staged --quiet || git commit -m "🤖 Auto: convocatorias actualizadas $(date '+%Y-%m-%d %H:%M UTC')"
+          git add convocatorias.json historial_ids.json scraper_log.txt || true
+          git diff --staged --quiet || git commit -m "🤖 SERVIR: convocatorias actualizadas $(date '+%Y-%m-%d %H:%M UTC')"
           git push
